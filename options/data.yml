@@ -1,0 +1,13 @@
+!!yaml
+test: !!org.shika.ToDoApp.Data.TodoData
+  ID: 0
+  completion: false
+  description: test-description
+  displayName: test-name
+  term: 2000/01/01
+id: !!org.shika.ToDoApp.Data.TodoData
+  ID: 0
+  completion: false
+  description: null
+  displayName: null
+  term: null
