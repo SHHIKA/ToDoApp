@@ -2,5 +2,5 @@ test: !!org.shika.ToDoApp.Data.TodoData
   ID: 0000
   completion: false
   description: "test-description"
-  displayName: "test-name"
+  displayName: "test"
   term: "2000/01/01"
