@@ -20,11 +20,7 @@ public class Main {
             if (!"".equals(input)){
                 switch (input) {
                     case "list": {
-                        for (Object obj : data.getMap().keySet()){
-                            String str = (String) obj;
-
-                            Console.WriteLine("[" + str + "] " + "期限: " + data.get(str).getTerm() + " 完了: " + data.get(str).isCompletion());
-                        }
+                        for (Object obj : data.getMap().keySet()) Console.WriteLine(data.get((String) obj).toString());
                         break;
                     }
 
@@ -54,11 +50,7 @@ public class Main {
                         //delete
                         Console.WriteLine("削除する項目の名前を入力してください");
 
-                        for (Object obj : data.getMap().keySet()){
-                            String str = (String) obj;
-
-                            Console.WriteLine("[" + str + "] " + "詳細: " + data.get(str).getDescription());
-                        }
+                        for (Object obj : data.getMap().keySet()) Console.WriteLine(data.get((String) obj).toString());
 
                         String message = Console.ReadLine();
                         if (message == null) return;
@@ -70,11 +62,7 @@ public class Main {
 
                     case "complete": {
                         Console.WriteLine("完了した項目を入力してください");
-                        for (Object obj : data.getMap().keySet()){
-                            String str = (String) obj;
-
-                            Console.WriteLine("[" + str + "] " + "期限: " + data.get(str).getTerm() + " 完了: " + data.get(str).isCompletion());
-                        }
+                        for (Object obj : data.getMap().keySet()) Console.WriteLine(data.get((String) obj).toString());
 
                         String message = Console.ReadLine();
                         if (message == null) return;
@@ -87,11 +75,7 @@ public class Main {
 
                     case "edit": {
                         Console.WriteLine("編集する項目を入力してください");
-                        for (Object obj : data.getMap().keySet()){
-                            String str = (String) obj;
-
-                            Console.WriteLine("[" + str + "] " + "期限: " + data.get(str).getTerm() + " 完了: " + data.get(str).isCompletion());
-                        }
+                        for (Object obj : data.getMap().keySet()) Console.WriteLine(data.get((String) obj).toString());
 
                         String message = Console.ReadLine();
                         if (message == null) return;

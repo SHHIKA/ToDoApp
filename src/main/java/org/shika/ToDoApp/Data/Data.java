@@ -65,10 +65,7 @@ public class Data {
     }
 
     private void SaveDefault() {
-        if(new File(outPath).exists()) {
-            Console.WriteLine("a");
-            return;
-        }
+        if(new File(outPath).exists()) return;
 
         this.resource = new Resource(this.aClass);
 

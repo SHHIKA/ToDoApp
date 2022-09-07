@@ -2,7 +2,6 @@ package org.shika.ToDoApp.Data;
 
 public class TodoData {
 
-    private int ID;
     private String DisplayName;
     private String Description;
     private String Term;
@@ -10,14 +9,6 @@ public class TodoData {
 
     public TodoData(){
 
-    }
-
-    public void setID(int ID){
-        this.ID = ID;
-    }
-
-    public int getID(){
-        return ID;
     }
 
     public void setDisplayName(String DisplayName){
@@ -50,5 +41,10 @@ public class TodoData {
 
     public boolean isCompletion(){
         return Completion;
+    }
+
+    @Override
+    public String toString(){
+        return "[名前]: " + DisplayName + " [説明]: " + Description + " [期限]: " + Term + " [完了]: " + Completion;
     }
 }
