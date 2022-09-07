@@ -1,21 +1,14 @@
 package org.shika.ToDoApp;
 
-import org.apache.maven.model.Model;
-import org.apache.maven.model.io.xpp3.MavenXpp3Reader;
-import org.codehaus.plexus.util.xml.pull.XmlPullParserException;
 import org.progcoa.pbjavautils.Console.Console;
 import org.shika.ToDoApp.Data.Data;
 import org.shika.ToDoApp.Data.TodoData;
-
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
 
 public class Main {
 
     public static Data data;
 
-    public static void main(String[] args) throws IOException, XmlPullParserException {
+    public static void main(String[] args) {
         data = new Data("data.yml", Main.class);
 
         Console.WriteLine("Run Todo App!");
@@ -102,8 +95,7 @@ public class Main {
                     }
 
                     case "-ver":{
-                        Model model = new MavenXpp3Reader().read(new FileReader("pom.xml"));
-                        System.out.println("Version: " + model.getVersion());
+                        System.out.println("Version: 1.1.0");
                         break;
                     }
 
