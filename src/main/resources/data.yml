@@ -1,5 +1,4 @@
 test: !!org.shika.ToDoApp.Data.TodoData
-  ID: 0000
   completion: false
   description: "test-description"
   displayName: "test"
